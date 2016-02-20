@@ -173,4 +173,8 @@ class PhoneNumberType extends AbstractType
     {
         return 'tel';
     }
+    
+    public function getBlockPrefix() {
+        return $this->getName();
+    }
 }
